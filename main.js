@@ -1,7 +1,17 @@
-const list = [1, 2, 3, 4, 5];
+const membro = {
+    nome: 'kleyson',
+    idade: 26,
+    sexo: 'M',
+    endereco: {
+            cidade: 'sao jose',
+            bairro: 'Ipiranga',
+            casa: 360,
+    },
+}
 
 
-// quando a funccao inter so tem uma instacao  a ser exutada
-// ela poder ser ecrita da forma abaixo
-const newList = list.map(item => item * 2);
-console.log(newList)
+function mostra({nome, endereco:{casa}}) {
+console.log(nome)
+}
+
+mostra(membro);
