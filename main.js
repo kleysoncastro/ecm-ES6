@@ -1,25 +1,22 @@
-// rest, rest fica com o resta de uma variavel/objeto
+
+//spread, spread junta basicamente estrutura de dados
+
+const vetorA = [1, 2, 3, 4];
+const vetorB = [5, 6, 7, 8]
+
+// percorrera o vetorA e vetorB 
+const vetor = [...vetorA, ...vetorB];
+
 
 const pessoa = {
+
     nome: 'kleyson',
-    idade: 26,
-    status: 'casado'
+    sobreNome: 'castro',
+    idade:26
 }
-// o operador ... guada os dados restanted depois da destruracao.
-const {nome, ...restante} = pessoa;
-
-// rest se aplica tambem em vetor
-
-const vetor = [1, 2, 3, 4, 5];
-// as variaves 'a' e 'b' receberam os valores respctivos e 'c' o resto
-const [a, b, ...c] = vetor;
 
 
+// percorreo o objer pessoa e sobre escrevel a variavel sobreNome
 
-// rest em funcoes
-// os dois primeiros parametros ficma em 'a' e 'b' e os depis em c
-function soma(a, b, ...c){
-      return c;
-}
-console.log(soma(1, 2, 3, 4))
-
+const npesso = {...pessoa, sobreNome: 'Fonseca'}
+console.log(npesso)
