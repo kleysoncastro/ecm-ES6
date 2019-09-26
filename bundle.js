@@ -45,11 +45,23 @@ var List =
 function (_Data) {
   _inherits(List, _Data);
 
-  function List() {
+  function List(nome) {
+    var _this;
+
     _classCallCheck(this, List);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(List).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(List).call(this));
+    _this.nome = 'kleyson';
+    return _this;
   }
+
+  _createClass(List, [{
+    key: "mostraNome",
+    value: function mostraNome() {
+      //this.nome.push(nome);
+      console.log();
+    }
+  }]);
 
   return List;
 }(Data); // fim da class List   <====
@@ -60,4 +72,5 @@ var novaLista = new List();
 
 document.getElementById('bt').onclick = function () {
   novaLista.add();
+  novaLista.mostraNome('fram');
 };
