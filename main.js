@@ -1,19 +1,24 @@
 // class list criada
-class List{
-// costrutor da class, pode receber parametros
+
+class Data{
     constructor() {
-        this.prod = [];
+        this.data = [];
     }
-// funcao da class, 
-    listTados() {
-        this.prod.push('novo elemento');
-        console.log(this.prod);
+
+    add(data) {
+        this.data.push(data);
+        console.log('novo elemento');
     }
-} // fim da class List   <====
+} // fim  da class Data <====
+
+class List extends Data {
+
+
+    }// fim da class List   <====
 
 // Objeto instaciado da class List
 const novaLista = new List();
 
 document.getElementById('bt').onclick = function() {
-    novaLista.listTados();
+    novaLista.add();
 };
