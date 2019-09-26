@@ -1,0 +1,10 @@
+{
+  "name": "ecma",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kleyson",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-env": "^7.6.2"
+  }
+}
